@@ -23,8 +23,6 @@ module.exports = {
             let guild = client.guilds.cache.get('615452646123241482');
             let member = guild.member(FetchUser);
             let nickname = member ? member.displayName : null;
-            // console.log(nickname)
-            // u += (`\`${i + 1}\` ${FetchUser.tag} **—** ${reputacja} ⭐\n`)
             u += (`\`${i + 1}.\` ${nickname} *(${FetchUser.tag})* - **${filtredMembers[i].episodes}**\n`)
         }
 
